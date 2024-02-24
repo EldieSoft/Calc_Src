@@ -2,15 +2,15 @@
  *
  *Pick a number between 1 and 4, and the magical computer box will do the coresponding operation.
  *
- *1 = add/sub, 2 = mul/div, 3 = exponent, 4 = grid mode
+ *1 = add/sub, 2 = mul/div, 3 = exponent, 4 = grid mode, 5 = clear terminal
  *
  *grid mode is now currently in it's own library called "grid.h"
  *
  *press 0 at main menu to close
  *
- * Big Bosco 2/17/24
+ * Big Bosco 2/24/24
  *
- * Version 1.3
+ * Version 1.4
  * 
 */ 
 
@@ -21,7 +21,7 @@
 int get_operation_type()//function to get operation
 {
 	int operation;
-	printf("What is your operation?\n1: ADD/SUB\t 2: MULT/DIV\t 3: EXP\t 4:GRID MODE\t 0: CLOSE\n");
+	printf("What is your operation?\n1: ADD/SUB\t2: MULT/DIV\t3: EXP\t4:GRID MODE\t5:CLEAR\t0: CLOSE\n");
 	scanf("%d", &operation);
 	return operation;
 }
@@ -111,6 +111,10 @@ float exponent_mayhem()
 	scanf("%d", &times);
 	end_prod = expon(num, times);
 }
+void mr_clearso()//just clears the terminal
+{
+	system("clear");
+}
 
 int main()
 {
@@ -131,7 +135,13 @@ int main()
 				numberino = exponent_mayhem();
 				break;
 			case 4:
+				printf("Grid Mode: ACTIVATED\n");
 				grid_mode();
+				printf("\n");
+				numberino = 0;
+				break;
+			case 5:
+				mr_clearso();
 				numberino = 0;
 				break;
 			default:
