@@ -1,12 +1,13 @@
 README for Calc_Src
+UPDATE: 2/24/24
 
-The original version of my small Calc.c terminal app can be found in my main repository, but after adding a new "Grid Mode" to my simple file, i realized it was getting much too cluttered as a simple single file C project. 
+THis is a brand new version with a completely rehashed grid mode. Now the grid will print points that the user inputs. It works with both positive and negative points, and, as of right now, the user can input 10 points at a time. 
 
-I decided it needed its own repository, because I have already made one new library for this project, I'm not sure how many more I will be making. As of right now, it is still just a simple calculator app, but for how long? I'm not sure. I'm having a lot of fun adding new features, and, although some of the features I have i mind go a bit out of scope for a simle calulator app, I'll keep adding stuff until I am satisfied, or bored.
+Another small improvement is the addition of a clear command at the selection menu, but that is just a quality of life improvement, and nothing spectacular. 
 
-Have fun looking through my files. Below will be compilation instructions, I know how hard it was to learn how to compile as a beginner, and I don't want anyone else to be lost.
+I will be adding more soon, but feel free to test everything out. I'll be cleaning up a lot of the code, there are still some artifacts of a previous build in there that I have to get rid of without destroying everything.
 
-Big Bosco 2/17/24
+Big Bosco
 
 
 COMPILATION INSTRUCTIONS (USING GCC):
